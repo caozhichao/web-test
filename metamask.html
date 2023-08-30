@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="https://metamask.github.io/test-dapp/">metamask</a>
+  <button id="connect" onclick="onConnect()">Connect</button>
+
+  <script>
+    async function onConnect(){
+      ethereum.on('disconnect',(err) => console.log(err) )
+      ethereum.on('connect',(connectInfo) => console.log(connectInfo))
+      ethereum.on('message',message => console.log(message))
+      ethereum.on('chainChanged',(chainId) => console.log(chainId))
+      ethereum.on('accountsChanged',(accounts) => console.log(accounts))
+      const r = await ethereum.request({ method: 'eth_requestAccounts', params: [] })
+      console.log(r)
+    }
+  </script>
+</body>
+</html>
