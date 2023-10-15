@@ -6,7 +6,8 @@
  * npx eslint index.js . 检测
  */
 
-var a = 1;
-var str = '12';
-var str2 = `str2 ${str}`;
-console.log(str);
+// var a = 1;
+// var str = '12';
+// var str2 = `str2 ${str}`;
+// console.log(str2);
+// console.log(a)
