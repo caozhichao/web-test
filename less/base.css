@@ -1,0 +1,19 @@
+.hb-btn-primary {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 4px 15px;
+  height: 32px;
+  background-color: red;
+  outline: none;
+  border: none;
+}
+.hb-btn-primary:hover {
+  background-color: green;
+}
+.hb-btn-primary:active {
+  background-color: blue;
+}
+.hb-btn-primary:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

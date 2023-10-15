@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <!--
+    页面加载的时候会扫描 link script src  进行预加载
+
+  -->
+</head>
+<body>
+  <!-- <script>
+    console.log(document.readyState)
+    document.addEventListener('readystatechange',() => {
+      console.log(document.readyState)
+    })
+  </script> -->
+  <div class="hello">hello</div> <!-- 渲染之前会等待上面的css样式加载完毕-->
+  <script src="./index.js"></script>
+  <!-- <script>
+    console.log(document.querySelector('.world')); 
+    let total = 0
+    for(let i = 0; i < 1000000000;i++){
+      total += i;
+    }
+  </script> -->
+  <!--js阻塞html解析，同样也阻塞渲染，js可能会操作样式，所以会等待上面的css加载完毕-->
+  <div class="world">world</div>
+</body>
+</html>

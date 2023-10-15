@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    var obj = {}
+    var objProxy = new Proxy(obj,{
+      set:function(target,p,newValue,receiver){
+        console.log(target,p,newValue,receiver)
+        target[p] = newValue
+        return true
+      },
+      get:function(target,p,receiver){
+        return target[p]
+      }
+    })
+
+    objProxy.a = 100
+    console.log(obj)
+
+
+    console.log(objProxy.a)
+
+  </script>
+</body>
+</html>
