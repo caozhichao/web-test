@@ -11,6 +11,9 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix --max-warnings 0",
       "prettier --write --ignore-unknown"
+    ],
+    "*.{css,less,sass,scss}":[
+      "prettier --write --ignore-unknown"
     ]
   },
   "repository": {
