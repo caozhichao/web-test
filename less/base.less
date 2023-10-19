@@ -1,20 +1,28 @@
 @font-base: 14px;
 
 .hb-btn-primary {
-  color: #ffffff;
+  color: #fff;
   font-size: @font-base;
   padding: 4px 15px;
   height: 32px;
   background-color: red;
   outline: none;
   border: none;
+
   &:hover {
     background-color: green;
   }
+
   &:active {
     background-color: blue;
   }
+
   &:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+
+  &--disabled {
     background-color: gray;
     cursor: not-allowed;
   }

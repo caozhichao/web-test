@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scale</title>
+  <style>
+
+    * { 
+      padding: 0;
+      margin: 0;
+    }
+    .parent {
+      height: 100px;
+      background-color: azure;
+    }
+    .child {
+      height: 50%;
+      background-color: blue;
+    }
+
+    .aspect-ratio { 
+      /* aspect-ratio:16/9; */
+      aspect-ratio:1/1;
+    }
+    .padding {
+      position: relative;
+      /* width: ; */
+      /* height: 0; */
+      padding-bottom: 56.25%;
+      background-color: brown;
+    }
+    .padding-child {
+      width: 100%;
+      position: absolute;  /*通过定位属性获取父盒子的高度*/
+      background-color: burlywood;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+  <!-- <div class="aspect-ratio">
+    aspect-ratio
+  </div> -->
+  <p>
+    通过设置padding为百分比，高度为0，然后高度自然溢出。
+    知识点：当margin/padding取形式为百分比的值时，无论是left/right，还是top/bottom，都是以父元素的width为参照物的，
+  </p>
+  <div class="padding">
+    <div class="padding-child"></div>
+  </div>
+
+
+</body>
+</html>
