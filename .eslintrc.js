@@ -10,7 +10,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    quotes: 1,
+    // quotes: 1,
     'no-console': 0, // 0 忽略 1 警告 2 错误
   },
 };

@@ -2,7 +2,7 @@
   "name": "web-test",
   "version": "1.0.0",
   "description": "web-test",
-  "main": "index.js",
+  "private":true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
@@ -35,6 +35,11 @@
     "postcss-less": "^6.0.0",
     "prettier": "^3.0.3",
     "stylelint": "^15.10.3",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint-config-standard": "^34.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "redux": "^4.2.1"
   }
 }

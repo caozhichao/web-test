@@ -11,3 +11,4 @@
 // var str2 = `str2 ${str}`;
 // console.log(str2);
 // console.log(a)
+console.log('123');
