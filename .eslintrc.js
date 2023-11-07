@@ -11,6 +11,6 @@ module.exports = {
   },
   rules: {
     // quotes: 1,
-    'no-console': 0, // 0 忽略 1 警告 2 错误
+    'no-console': 1, // 0 忽略 1 警告 2 错误
   },
 };

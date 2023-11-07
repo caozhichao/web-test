@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>responsive-box</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-flow: row wrap;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+    .container .item-box {
+      width: 33.33%;
+      height: 150px;
+      padding: 0 16px;
+      margin: 16px 0;
+    }
+    .container .item-box .inner-box {
+      height: 100%;
+      background-color: #999;
+      border-radius: 8px;
+    }
+    @media screen and (max-width:992px) {
+      .container .item-box {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width:576px) {
+      .container .item-box {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item-box">
+      <div class="inner-box">1</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">2</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">3</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">4</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">5</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">6</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">7</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">8</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">9</div>
+    </div>
+    <div class="item-box">
+      <div class="inner-box">10</div>
+    </div>
+  </div>
+</body>
+</html>
